@@ -2,6 +2,8 @@
 # Automatically generated make config: don't edit
 # Linux/arm 3.0.31 Kernel Configuration
 #
+CONFIG_OOM_KILL=y
+CONFIG_CGROUP_TIMER_SLACK=y
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
