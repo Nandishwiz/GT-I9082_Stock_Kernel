@@ -120,7 +120,7 @@ ifeq ($(CONFIG_VFP),y)
 ifeq ($(CONFIG_VFPv3),y)
 # v3 vfp
 KBUILD_CFLAGS	+=-mfpu=vfp3 -mfloat-abi=softfp
-KBUILD_AFLAGS	+=-mfpu=vfp3 -mfloat-abi=softfp 
+KBUILD_AFLAGS	+=-mfpu=vfp3 -mfloat-abi=softfp
 else
 #non-v3 vfp
 KBUILD_CFLAGS	+=-mfloat-abi=softfp
@@ -272,7 +272,7 @@ core-$(CONFIG_VFP)		+= arch/arm/vfp/
 # If we have a machine-specific directory, then include it in the build.
 core-y				+= arch/arm/kernel/ arch/arm/mm/ arch/arm/common/
 core-y				+= $(machdirs) $(platdirs)
-
+core-$(CONFIG_INTELLI_PLUG)	+= arch/arm/hotplug/
 drivers-$(CONFIG_OPROFILE)      += arch/arm/oprofile/
 
 libs-y				:= arch/arm/lib/ $(libs-y)
@@ -333,7 +333,7 @@ define archhelp
   echo  '  Image         - Uncompressed kernel image (arch/$(ARCH)/boot/Image)'
   echo  '* xipImage      - XIP kernel image, if configured (arch/$(ARCH)/boot/xipImage)'
   echo  '  uImage        - U-Boot wrapped zImage'
-  echo  '  bootpImage    - Combined zImage and initial RAM disk' 
+  echo  '  bootpImage    - Combined zImage and initial RAM disk'
   echo  '                  (supply initrd image via make variable INITRD=<path>)'
   echo  '  dtbs          - Build device tree blobs for enabled boards'
   echo  '  install       - Install uncompressed kernel'
