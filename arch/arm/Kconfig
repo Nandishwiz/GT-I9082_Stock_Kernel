@@ -902,7 +902,7 @@ config ARCH_KONA
 	select TICK_ONESHOT
 	help
 	  This enables support for system based on Broadcom KONA architecture
-
+ 
 endchoice
 
 #
@@ -941,8 +941,6 @@ source "arch/arm/mach-iop13xx/Kconfig"
 source "arch/arm/mach-ixp4xx/Kconfig"
 
 source "arch/arm/mach-ixp2000/Kconfig"
-
-source "arch/arm/hotplug/Kconfig"
 
 source "arch/arm/mach-ixp23xx/Kconfig"
 

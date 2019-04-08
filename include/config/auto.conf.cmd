@@ -677,7 +677,6 @@ deps_config := \
 	arch/arm/plat-kona/Kconfig \
 	arch/arm/mach-kirkwood/Kconfig \
 	arch/arm/mach-ixp23xx/Kconfig \
-	arch/arm/hotplug/Kconfig \
 	arch/arm/mach-ixp2000/Kconfig \
 	arch/arm/mach-ixp4xx/Kconfig \
 	arch/arm/mach-iop13xx/Kconfig \
